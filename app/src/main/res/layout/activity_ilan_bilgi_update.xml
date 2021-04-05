@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IlanBilgiUpdateActivity">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="İlan Bilgileri Düzenleme"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/lblIlanDuzenleme"/>
+
+    <EditText
+        android:id="@+id/txtIlanDuzenlemeTitle"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblIlanDuzenleme"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:hint="İlan Başlık"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/txtIlanDuzenlemeDescription"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtIlanDuzenlemeTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="İlan Açıklaması"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/txtIlanDuzenlemePrice"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtIlanDuzenlemeDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="İlan Fiyatı"
+        android:textColor="@color/black" />
+
+
+    <Button
+        android:backgroundTint="#2D98DA"
+        android:layout_marginTop="20dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnIlanUpdate"
+        android:layout_below="@+id/txtIlanDuzenlemePrice"
+        android:layout_centerHorizontal="true"
+        android:text="İlan Güncelle ve İleri Git"/>
+    
+
+
+</RelativeLayout>

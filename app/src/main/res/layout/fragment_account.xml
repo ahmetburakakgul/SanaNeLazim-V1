@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/imgPerson"
+        android:src="@drawable/person"
+        android:layout_centerHorizontal="true">
+
+    </ImageView>
+
+    <EditText
+        android:layout_below="@+id/imgPerson"
+        android:id="@+id/txtuserName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+    </EditText>
+
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txtuserName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPassword">
+    </EditText>
+
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txtPassword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtEmail">
+    </EditText>
+
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txtEmail"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPhone">
+    </EditText>
+
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnGuncelle"
+        android:backgroundTint="#2D98DA"
+        android:layout_below="@+id/txtPhone"
+        android:text="Bilgileri Güncelle">
+
+    </Button>
+
+
+
+</RelativeLayout>

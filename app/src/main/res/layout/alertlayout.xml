@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="#FF5232"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ne Yapmak İstiyorsunuz"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:textSize="13dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Sil"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:backgroundTint="#C0C0C0"
+            android:id="@+id/btnSil"/>
+
+        <Button
+            android:textSize="13dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Düzenle"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:backgroundTint="#C0C0C0"
+            android:id="@+id/btnDuzenle"/>
+
+        <Button
+            android:textSize="13dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="İptal Et"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:backgroundTint="#C0C0C0"
+            android:id="@+id/btnIptalEt"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

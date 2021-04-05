@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_alignParentTop="true"
+        android:id="@+id/lblIlanDetay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="İLAN DETAY"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:background="#F0F1F5"
+        android:padding="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/lblIlanDetay"
+        android:id="@+id/sliderIlanDetay">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/ilanDetaySlider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+        </androidx.viewpager.widget.ViewPager>
+
+        <me.relex.circleindicator.CircleIndicator
+
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/sliderCircle"
+            app:ci_drawable="@color/white"
+            app:ci_drawable_unselected="@color/black">
+
+        </me.relex.circleindicator.CircleIndicator>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/sliderIlanDetay"
+        android:layout_above="@+id/ilanDetayOzelliik"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Başlık :"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                </TextView>
+                <TextView
+                    android:id="@+id/lblIlanBaslikDetay"
+                    android:gravity="right"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#9E58DC"
+                    android:text="Başlık "
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Fiyat :"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                </TextView>
+                <TextView
+                    android:id="@+id/lblIlanDetayFiyat"
+                    android:gravity="right"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#9E58DC"
+                    android:text="Fiyat "
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Kategori :"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                </TextView>
+                <TextView
+                    android:id="@+id/lblIlanDetayKategori"
+                    android:gravity="right"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#9E58DC"
+                    android:text="Kategori "
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Durumu :"
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                </TextView>
+                <TextView
+                    android:id="@+id/lblIlanDetayDurunu"
+                    android:gravity="right"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#9E58DC"
+                    android:text="Durumu "
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="Açıklama"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                </TextView>
+                <TextView
+                    android:id="@+id/lblIlanDetayAciklama"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#9E58DC"
+                    android:text="Açıklama "
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                </TextView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ilanDetayOzelliik"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnIlanDetayMesajlasma"
+            android:layout_marginRight="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:backgroundTint="#2D98DA"
+            android:textStyle="bold"
+            android:text="Mesaj Gönder">
+        </Button>
+        <Button
+            android:backgroundTint="#2D98DA"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:id="@+id/btnIlanDetayFavoriEkle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Favoriye Ekle">
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

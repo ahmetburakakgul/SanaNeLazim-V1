@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "384020329514",
+    "firebase_url": "https://sananelazim-bd962-default-rtdb.firebaseio.com",
+    "project_id": "sananelazim-bd962",
+    "storage_bucket": "sananelazim-bd962.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384020329514:android:58243677faff8ceb6f3f53",
+        "android_client_info": {
+          "package_name": "com.example.snl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384020329514-ir8qv470dvhuvkopoftd9mqml61mda6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi3Rc0OuMhJlLqEdRBEQYGJPOA2XUeiS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384020329514-ir8qv470dvhuvkopoftd9mqml61mda6m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

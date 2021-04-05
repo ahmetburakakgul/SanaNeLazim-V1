@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1.1"
+        android:layout_height="109dp"
+        android:id="@+id/imgFavori"/>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deneme"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/lblFavoriBaslik"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_below="@+id/lblFavoriBaslik"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:text="Deneme"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/lblFavoriAcıklama"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/lblFavoriAcıklama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deneme"
+            android:textSize="12dp"
+            android:gravity="right|bottom"
+            android:textColor="#FF0000"
+            android:id="@+id/lblFavoriFiyat"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

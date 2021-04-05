@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lblİlanBilgisi"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="İlan Bilgilerini Giriniz"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/editTextİlanBaslik"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblİlanBilgisi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="İlan Başlığını Girin"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editTextİlanAciklama"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextİlanBaslik"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="İlan Açıklamasını Girin"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editTextİlanFiyat"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextİlanAciklama"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="İlan Fiyatını Girin"
+        android:inputType="text"/>
+
+    <Spinner
+        android:id="@+id/spinnerKategori"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextİlanFiyat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:spinnerMode="dropdown"
+        android:gravity="center"/>
+
+    <Spinner
+        android:id="@+id/spinnerUrunDurumu"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerKategori"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:spinnerMode="dropdown"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnİleri"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerUrunDurumu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:backgroundTint="#2D98DA"
+        android:text="İlanı Yayınla" />
+
+
+</RelativeLayout>

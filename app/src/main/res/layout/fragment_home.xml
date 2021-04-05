@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/reklam"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/anasayfa"></pl.droidsonroids.gif.GifImageView>
+
+    <RelativeLayout
+        android:id="@+id/sliderIlanDetay"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/reklam"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/favoriIlanSlider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"></androidx.viewpager.widget.ViewPager>
+
+        <me.relex.circleindicator.CircleIndicator
+
+            android:id="@+id/favoriIlanCircle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            app:ci_drawable="@color/white"
+            app:ci_drawable_unselected="@color/black">
+
+        </me.relex.circleindicator.CircleIndicator>
+
+    </RelativeLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/reklam2"
+        android:src="@drawable/alttasarim"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/sliderIlanDetay"
+        android:layout_marginTop="30dp" />
+
+</RelativeLayout>

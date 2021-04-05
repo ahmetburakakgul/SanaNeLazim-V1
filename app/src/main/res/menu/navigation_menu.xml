@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_hompage"
+        android:icon="@mipmap/baseline_home_black_24dp"
+        android:title="Anasayfa"/>
+
+    <item android:id="@+id/nav_account"
+        android:icon="@mipmap/baseline_person_black_24dp"
+        android:title="Hesabım"/>
+
+    <item android:id="@+id/nav_ilanlarim"
+        android:icon="@mipmap/baseline_list_alt_black_24dp"
+        android:title="İlanlarım"/>
+
+    <item android:id="@+id/nav_message"
+        android:icon="@mipmap/baseline_mail_black_24dp"
+        android:title="Mesajlarım"/>
+
+    <item android:id="@+id/nav_ilanver"
+        android:icon="@mipmap/baseline_add_task_black_24dp"
+        android:title="İlan Ver"/>
+
+    <item android:id="@+id/nav_favorites"
+        android:icon="@mipmap/baseline_stars_black_24dp"
+        android:title="Favorilerim"/>
+
+    <item android:id="@+id/nav_allilan"
+        android:icon="@mipmap/baseline_view_list_black_24dp"
+        android:title="Tüm İlanlar"/>
+
+
+    <item android:id="@+id/nav_logout"
+        android:checkable="true"
+        android:icon="@mipmap/baseline_exit_to_app_black_24dp"
+        android:title="Çıkış Yap"/>
+
+</menu>
